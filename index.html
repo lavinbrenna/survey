@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lan="eng">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Social Media Wellness Survey</title> 
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Social Media Wellness Survey</h1>
+    </div>
+    <div>
+      <form id="formOne">
+        <div class="form-group">
+          <label for="name1">Please Enter Your Name:</label>
+          <input id="name1" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="born">Date of birth:</label>
+          <input id="born" class="form-control" type="date">
+        </div>
+        <div class="radio">
+          <label>What gender do you identify as?</label>
+          <br>
+          <label>
+            <input type="radio" name="gender" value="Non-binary" checked>
+            Non-Binary
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="gender" value="Male">
+            Male
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="gender" value="Female">
+            Female
+          </label>
+        </div>
+        <label>Which of the following forms of social media do you use daily?
+        <select class="form-control" id="media">
+          <option>Twitter</option>
+          <option>Instagram</option>
+          <option>Snapchat</option>
+          <option>Facebook</option>
+        </select>
+        </label>
+        <br>
+        <label>How often do you check this app daily?</label>
+        <select class="form-control" id="timesChecked">
+          <option value="1">1-2 times</option>
+          <option value="2">3-4 times</option>
+          <option value="3">5-6 times</option>
+          <option value="4">7-8 times</option>
+          <option value="5">9-10 times</option>
+          <option value="6">10+ times</option>
+        </select>
+        <label>Do you care about how many people view or like your posts?</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="views" value="yes" checked>
+            Yes
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="views" value="no">
+            No
+          </label>
+        </div>
+        <label>
+          Do you feel confident or well-liked based on the number of likes you get on a post?
+        </label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="likes" value="yes" checked>
+            Yes
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="likes" value="no">
+            No
+          </label>
+        </div>
+        <label>Do you feel as if you are a different person online?</label>
+        <div class="radio">
+          <label>
+          <input type="radio" name="different" value="yes" checked>
+          Yes
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="different" value="no">
+            No
+          </label>
+        </div>
+        <label>Do you feel social media has impacted your mental health?</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="impact" value="yes" checked>
+            Yes
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="impact" value="no">
+            No
+          </label>
+        </div>
+        <label>If so, in what way has it effected you?
+          <select class="form-control" id="effect">
+            <option>Anxiety</option>
+            <option>Depression</option>
+            <option>Eating Disorder</option>
+            <option>Self Esteem</option>
+            <option>More than one of these</option>
+          </select>
+          </label>
+        <div class="form group">
+          <label for="color">What color best represents your mood?</label>
+          <input id="color" class="form-control" type="color">
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+    <div id="submitted">
+      <p>Thank you for submitting your answers.</p>
+    </div>
+  </div>
+
+</body>
+</html>
